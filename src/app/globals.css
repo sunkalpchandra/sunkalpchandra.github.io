@@ -287,6 +287,43 @@ html.theming * {
 }
 
 /* ---------------------------------------------------------------------------
+   Print (CV)
+--------------------------------------------------------------------------- */
+
+@media print {
+  header,
+  footer,
+  .cv-actions {
+    display: none !important;
+  }
+
+  :root,
+  .dark {
+    --paper: #ffffff;
+    --ink: #111;
+    --ink-secondary: #333;
+    --ink-muted: #555;
+    --accent: #1a2f8f;
+    --line: #ddd;
+  }
+
+  .cv-page {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .cv-section {
+    break-inside: avoid-page;
+  }
+
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* ---------------------------------------------------------------------------
    Reduced motion: kill all movement, keep content visible
 --------------------------------------------------------------------------- */
 
