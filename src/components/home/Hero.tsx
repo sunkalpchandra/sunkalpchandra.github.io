@@ -16,14 +16,14 @@ export function Hero() {
       </div>
 
       <div className="relative mx-auto flex min-h-[92svh] max-w-6xl flex-col justify-center px-5 pb-24 pt-32 sm:px-8">
-        <div className="max-w-[36rem] lg:max-w-[34rem]">
+        <div className="max-w-[36rem] lg:max-w-[40rem]">
           <Reveal>
             <p className="meta-label">
               Sunkalp Chandra · CS × Neuroscience · UT Austin
             </p>
           </Reveal>
           <Reveal delay={80}>
-            <h1 className="mt-7 text-[2.6rem] font-semibold leading-[1.06] tracking-[-0.025em] text-ink sm:text-6xl">
+            <h1 className="mt-7 text-[2.5rem] font-semibold leading-[1.07] tracking-[-0.025em] text-ink sm:text-6xl">
               I build systems for understanding{" "}
               <em className="font-editorial font-medium italic text-accent">intelligence</em> —
               artificial and biological.
