@@ -21,6 +21,7 @@
     "@types/react-dom": "^19.2.4",
     "gray-matter": "^4.0.3",
     "marked": "^18.0.9",
+    "playwright": "^1.62.1",
     "tailwindcss": "^4.3.3",
     "typescript": "5.9"
   }
