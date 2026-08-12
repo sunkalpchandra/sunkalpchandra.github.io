@@ -111,7 +111,7 @@ export const projects: Project[] = [
       },
     ],
     image: {
-      src: "/images/projects/tribe-latent-space.png",
+      src: "/images/projects/tribe-latent-space.jpg",
       alt: "TRIBE Explorer rendering the latent space of an fMRI foundation model",
       caption: "TRIBE Explorer: the latent space of an fMRI encoder, one point per timestep.",
     },
