@@ -3,7 +3,25 @@ import { inter, newsreader, plexMono } from "@/lib/fonts";
 import { site } from "@/data/site";
 import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
+import { KeyboardEggs } from "@/components/KeyboardEggs";
 import "./globals.css";
+
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Sunkalp Chandra",
+  url: site.url,
+  email: `mailto:${site.email}`,
+  affiliation: { "@type": "CollegeOrUniversity", name: "The University of Texas at Austin" },
+  sameAs: [site.links.github, site.links.linkedin, site.links.scholar],
+  knowsAbout: [
+    "Computer Science",
+    "Computational Neuroscience",
+    "Machine Learning",
+    "Brain-Computer Interfaces",
+    "Neural Decoding",
+  ],
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
@@ -48,6 +66,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     >
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeInit }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+        />
       </head>
       <body>
         <a
@@ -59,6 +81,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <SiteNav />
         <main id="main">{children}</main>
         <SiteFooter />
+        <KeyboardEggs />
       </body>
     </html>
   );
