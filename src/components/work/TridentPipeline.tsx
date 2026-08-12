@@ -6,7 +6,9 @@
  */
 export function TridentPipeline() {
   return (
-    <figure className="my-4">
+    /* Breaks out of the text column on large screens — the sidebar beside it is
+       short, so the figure can use the full container width. */
+    <figure className="my-4 lg:w-[calc(100%+24.5rem)]">
       <div className="overflow-x-auto rounded-xl border border-line bg-paper-raised p-6 sm:p-8">
         <svg
           viewBox="0 0 940 320"
@@ -127,7 +129,7 @@ export function TridentPipeline() {
               REASONING
             </text>
             <text x="520" y="278" textAnchor="middle" fontFamily="var(--font-plex-mono)" fontSize="9" fill="var(--ink-faint)" letterSpacing="1">
-              temporal context · routing
+              temporal · routing
             </text>
           </g>
 
@@ -141,7 +143,7 @@ export function TridentPipeline() {
               PERSONALIZE
             </text>
             <text x="672" y="278" textAnchor="middle" fontFamily="var(--font-plex-mono)" fontSize="9" fill="var(--ink-faint)" letterSpacing="1">
-              neural identity · Bayesian
+              identity · Bayesian
             </text>
           </g>
 
