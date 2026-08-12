@@ -151,7 +151,7 @@ export function NeuralManifold({ className = "" }: { className?: string }) {
           const dy = py[i] - py[j];
           const d2 = dx * dx + dy * dy;
           if (d2 < maxD * maxD) {
-            const alpha = 0.16 * (1 - Math.sqrt(d2) / maxD);
+            const alpha = 0.22 * (1 - Math.sqrt(d2) / maxD);
             ctx.strokeStyle = colors.line;
             ctx.globalAlpha = alpha;
             ctx.beginPath();
@@ -180,7 +180,7 @@ export function NeuralManifold({ className = "" }: { className?: string }) {
       for (let i = 0; i < pts.length; i++) {
         const p = pts[i];
         const isHovered = hovered === p.cluster;
-        ctx.globalAlpha = isHovered ? 0.9 : p.accent ? 0.75 : 0.38;
+        ctx.globalAlpha = isHovered ? 0.9 : p.accent ? 0.8 : 0.46;
         ctx.fillStyle = p.accent || isHovered ? colors.accent : colors.ink;
         const size = p.accent ? 2.1 : 1.6;
         ctx.beginPath();
