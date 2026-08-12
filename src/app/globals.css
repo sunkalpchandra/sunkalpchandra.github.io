@@ -287,6 +287,30 @@ html.theming * {
 }
 
 /* ---------------------------------------------------------------------------
+   Easter eggs
+--------------------------------------------------------------------------- */
+
+/* research mode: press R — mono annotations appear */
+.research-annotation {
+  display: none;
+}
+
+html.research-mode .research-annotation {
+  display: block;
+}
+
+/* konami: a nine-second violet phase */
+html.konami {
+  --accent: #7c5cf0;
+  --accent-ink: #6647e0;
+}
+
+html.konami.dark {
+  --accent: #a78bfa;
+  --accent-ink: #c4b0ff;
+}
+
+/* ---------------------------------------------------------------------------
    Print (CV)
 --------------------------------------------------------------------------- */
 

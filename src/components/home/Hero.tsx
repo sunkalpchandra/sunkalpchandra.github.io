@@ -61,6 +61,10 @@ export function Hero() {
             scroll
           </p>
         </Reveal>
+
+        <p className="research-annotation absolute bottom-8 right-5 font-mono text-[10px] uppercase tracking-[0.14em] text-accent sm:right-8">
+          fig. 0 — 110 pts · 5 clusters · hover to identify
+        </p>
       </div>
     </section>
   );
